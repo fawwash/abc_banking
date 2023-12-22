@@ -1,0 +1,24 @@
+{
+  "name": "datatables-scroller",
+  "main": [
+    "js/dataTables.scroller.js",
+    "css/scroller.dataTables.scss"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.0",
+    "datatables": ">=1.10.0"
+  },
+  "homepage": "https://datatables.net",
+  "license": "MIT",
+  "version": "2.2.0",
+  "_release": "2.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.2.0",
+    "commit": "1d14ef9559816f2bced021420e8a9a8e8ffe8001"
+  },
+  "_source": "https://github.com/DataTables/Scroller.git",
+  "_target": "^2.2.0",
+  "_originalSource": "datatables-scroller",
+  "_direct": true
+}

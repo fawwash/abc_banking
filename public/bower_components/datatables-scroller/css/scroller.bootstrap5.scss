@@ -1,0 +1,13 @@
+@import 'scroller.dataTables.scss';
+
+div.DTS div.dataTables_scrollBody table {
+	// Don't have transparent rows
+	background-color: white;
+}
+
+html[data-bs-theme="dark"] {
+	div.DTS div.dataTables_scrollBody table {
+		// Don't have transparent rows
+		background-color: var(--bs-body-bg);
+	}
+}

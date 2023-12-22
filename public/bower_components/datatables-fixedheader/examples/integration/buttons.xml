@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dt-example table-type="html" order="6">
+
+<css lib="datatables fixedheader buttons" />
+<js lib="jquery datatables fixedheader buttons buttons-colvis">
+<![CDATA[
+$('#example').DataTable({
+	buttons: ['colvis'],
+	dom: 'Bfrtip',
+	fixedHeader: true
+});
+
+]]>
+</js>
+
+<js-vanilla>
+<![CDATA[
+new DataTable('#example', {
+	buttons: ['colvis'],
+	dom: 'Bfrtip',
+	fixedHeader: true
+});
+
+]]>
+</js-vanilla>
+
+<title lib="FixedHeader">Buttons columns visibility integration</title>
+
+<info><![CDATA[
+
+[Buttons](https://datatables.net/extensions/buttons) provides a number of options to control a DataTable including column visibility control. This example shows how FixedHeader will dynamically update as the column visibility changes.
+
+]]></info>
+
+</dt-example>

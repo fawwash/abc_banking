@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dt-example table-type="sequence" table-class="display" order="6" framework="jqueryui">
+
+<css lib="datatables rowreorder"/>
+<js lib="jquery datatables rowreorder">
+<![CDATA[
+
+$('#example').DataTable({
+	rowReorder: true
+});
+
+]]>
+</js>
+
+<js-vanilla>
+<![CDATA[
+
+new DataTable('#example', {
+	rowReorder: true
+});
+
+]]>
+</js-vanilla>
+
+<title lib="RowReorder">jQuery UI styling</title>
+
+<info><![CDATA[
+
+This example shows DataTables and RowReorder being used with [jQuery UI](http://jqueryui.com/) providing the base styling information.
+
+]]></info>
+
+</dt-example>
+

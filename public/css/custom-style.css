@@ -1,0 +1,25 @@
+.row-scrollable {
+    overflow-y: scroll;
+    height: 500px;
+}
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.col-lg-1 {
+    justify-content: flex-end;
+    display: flex;
+}
+.col-auto {
+    display: flex;
+    justify-content: end;
+}
+.invalid-feedback {
+    display:none;
+    width:100%;
+    margin-top:.25rem;
+    font-size:.875em;
+    color: #ed5e5e !important;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dt-example table-type="html" order="6" framework="jqueryui">
+
+<css lib="datatables fixedheader" />
+<js lib="jquery datatables fixedheader">
+<![CDATA[
+$('#example').DataTable({
+	fixedHeader: true
+});
+]]>
+</js>
+
+<js-vanilla>
+<![CDATA[
+new DataTable('#example', {
+	fixedHeader: true
+});
+]]>
+</js-vanilla>
+
+<title lib="FixedHeader">jQuery UI styling</title>
+
+<info><![CDATA[
+
+This example shows FixedHeader operating with the jQuery UI ThemeRoller styling framework.
+
+]]></info>
+
+</dt-example>

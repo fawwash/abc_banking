@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dt-example table-type="sequence" table-class="display" order="8" framework="foundation">
+
+<css lib="datatables rowreorder"/>
+<js lib="jquery datatables rowreorder">
+<![CDATA[
+
+$('#example').DataTable({
+	rowReorder: true
+});
+
+]]>
+</js>
+
+<js-vanilla>
+<![CDATA[
+
+new DataTable('#example', {
+	rowReorder: true
+});
+
+]]>
+</js-vanilla>
+
+<title lib="RowReorder">Foundation styling</title>
+
+<info><![CDATA[
+
+This example shows DataTables and the RowReorder extension being used with the [Foundation](http://foundation.zurb.com) framework providing the styling. The [DataTables / Foundation integration](//datatables.net/manual/styling/foundation) provides seamless integration for DataTables to be used in a Foundation page.
+
+]]></info>
+
+</dt-example>
+
