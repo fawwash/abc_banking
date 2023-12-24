@@ -1,6 +1,13 @@
 # Laravel Banking Application
 The Laravel Banking Application is a small-scale web application developed using the Laravel PHP framework. The primary objective of this application is to provide users with basic banking functionalities in a secure and user-friendly environment.
 
+## Contents Of This Readme
+
+1. [Key Features](https://github.com/fawwash/abc_banking#key-features)
+2. [Technologies Used](https://github.com/fawwash/abc_banking#technologies-used)
+3. [How to Run](https://github.com/fawwash/abc_banking#how-to-run)
+4. [Access the Application](https://github.com/fawwash/abc_banking#access-the-application)
+
 ## Key Features:
 
 ## Registration:
