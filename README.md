@@ -75,4 +75,6 @@ Database management system for storing user data and transaction records.
 </pre>
 
 ## Access the Application:
-Open your web browser and go to "http://localhost/abc_banking/public" to access the application.
+- Open your web browser and go to ```http://localhost/abc_banking/public``` to access the application.
+- Registration: ```http://localhost/banking_app/public/signup```
+- Login: ```http://localhost/banking_app/public/login```
