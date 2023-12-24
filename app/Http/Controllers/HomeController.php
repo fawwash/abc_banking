@@ -8,12 +8,15 @@ use App\Models\Statement;
 use App\Models\Transaction;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class HomeController extends Controller
 {
     public function index()
     {
         $user_id = auth()->user()->id;
+        // Here we can get the id from cookie itself by using cookie facade.
+        // $user_id = Cookie::get('id');
         $balance = Account::where('user_id', $user_id)->value('balance');
         return view('home', ['balance' => $balance]);
     }
