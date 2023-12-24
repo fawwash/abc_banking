@@ -7,6 +7,8 @@ use App\Models\Account;
 use App\Models\Statement;
 use App\Models\Transaction;
 use Carbon\Carbon;
+use DateTime;
+use DateTimeZone;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 
@@ -166,7 +168,14 @@ class HomeController extends Controller
             foreach ($res as $k => $v) {
                 $n_data = array();
                 $n_data[] = $k + 1;
-                $n_data[] = $v->datetime;
+                // $n_data[] = $v->datetime; // Here we can display the raw dateTime from database table
+                $datetime = new DateTime($v->datetime, new DateTimeZone('UTC'));
+                $datetime->setTimezone(new DateTimeZone('Asia/Kolkata'));
+                $formattedDate = $datetime->format('d-m-Y');
+                // $formattedTime = $datetime->format('H:i:s'); // here we can display 24hrs time
+                $formattedTime = $datetime->format('h:i:s A'); // here we can display 12hrs time with AM and PM
+                $formattedDateTime = $formattedDate . ' ' . $formattedTime; // Displayed the 12Hrs dateTime with AM and PM as it is in given mockup
+                $n_data[] = $formattedDateTime;
                 $n_data[] = $v->amount;
                 $typeClass = '';
                 if ($v->type == 'Credit') {
